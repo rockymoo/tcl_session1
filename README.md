@@ -5,10 +5,19 @@ To create the command to pass .csv from UNIX shell to TCL script Scenarios:
 # DAY 1
 # introduction to tcl 
 sub tasks:
- Create a command to pass the .csv(excel sheet) from Unix Shell to TCL script
+
+ 1.1Create a command to pass the .csv(excel sheet) from Unix Shell to TCL script
  
-  Convert all inputs to format[1] and SDC format and pass it to synthesis tool 'Yosys'
+  1.2Convert all inputs to format[1] and SDC format and pass it to synthesis tool yosys
  
-  Convert format[1] and SDC to format[2] and pass it to timing tool 'OpenTimer'
+  1.3Convert format[1] 0r from yosys and SDC to format[2] and passing into timing tool OpenTimer
   
-  Generate the output timing report
+  1.4Generate the output timing report
+
+  To create the command to pass .csv from UNIX shell to TCL script Scenarios:
+
+no .csv provided
+
+$argv[1]           // gives the first argument 
+$argv[2]           // gives the second argument and so on....
+$#argv             // gives the number of arguments passed in the command
