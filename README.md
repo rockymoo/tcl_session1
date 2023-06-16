@@ -18,6 +18,35 @@ sub tasks:
 
 no .csv provided
 
-$argv[1]           // gives the first argument 
-$argv[2]           // gives the second argument and so on....
-$#argv             // gives the number of arguments passed in the command
+$argv[1]           // gives the 1st argument 
+$argv[2]           // gives the 2nd argument
+$#argv             // gives the number of arguments passed  
+
+
+code for task  following:
+
+if(! -f $argv[1] || $argv[1] == "-help") then
+
+	if($argv[1] != "-help") then
+ 
+		echo "Error: Cannot find csv file $argv[1]. Exiting..."
+  
+		exit 1
+  
+	else
+ 
+		echo "USAGE: ./rakesh <csv file> , where the <csv file> consists of 2 columns  -->  1st column is being case sensitive."
+  
+		echo "Note if the file is not in the same directory, ensure to include the path along with the <csv file>"
+  
+		echo 
+  
+		echo "<Design Name> is the name of the top module"
+
+  endif
+  
+else
+
+		tclsh rakesh.tcl $argv[1]
+  
+endif
