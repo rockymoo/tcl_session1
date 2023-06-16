@@ -50,3 +50,7 @@ else
 		tclsh rakesh.tcl $argv[1]
   
 endif
+![WhatsApp Image 2023-06-16 at 17 47 38](https://github.com/RAKESHRAKIHR/tcl_session1/assets/126293037/8ae056b0-31d7-47f2-b8f2-d11f590b02d5)
+
+![WhatsApp Image 2023-06-16 at 17 29 43](https://github.com/RAKESHRAKIHR/tcl_session1/assets/126293037/eaae8d07-bcbf-45aa-a575-b29d822be9af)
+
